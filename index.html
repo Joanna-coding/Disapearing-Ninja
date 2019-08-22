@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Assignment: jQuery Functions</title>
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" i
+        ntegrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+</head> 
+<style>
+
+    *{
+        margin: 0 auto;
+        padding: 2px;
+        background-image: black;
+    }
+
+    #wrapper{
+        background-color: black;
+        width: 490px;
+        height: 350px;
+    }
+
+    .row1{
+        width: 450px;
+        height: 120px;
+        display: inline-flex;
+    }
+
+    .row2{
+        width: 450px;
+        height: 120px;
+        display: inline-flex;
+    }
+
+    #one{
+        height: 110px;
+        width:110px;
+        display: inline-block;
+    }
+
+    #two{
+        height: 110px;
+        width:110px;
+        display: inline-block;
+    }
+
+    #three{
+        height: 110px;
+        width:110px;
+        display: inline-block;
+    }
+    #four{
+        height: 110px;
+        width:110px;
+        display: inline-block;
+    }
+    #six{
+        height: 110px;
+        width:110px;
+        display: inline-block;
+    }
+    #seven{
+        height: 110px;
+        width:110px;
+        display: inline-block;
+    }
+    #eight{
+        height: 110px;
+        width:110px;
+        display: inline-block;
+    }
+    #five{
+        height: 110px;
+        width:110px;
+        display: inline-block;
+    }
+    h1{
+        color:cornsilk;
+        text-align: center;
+    }
+
+</style>
+<body>
+        
+    <div id="wrapper">
+        <h1>disppearing Ninja</h1>
+        <div class="container">
+            <div class="row1">
+                <div id="one">
+                    <img src="ninja.png" alt="" height="100" width="100">
+                </div>
+                <div id="two">
+                        <img src="ninja.png" alt="" height="100" width="100">
+                </div>
+                <div id="three">
+                        <img src="ninja.png" alt="" height="100" width="100">
+                </div>
+                <div id="four">
+                        <img src="ninja.png" alt="" height="100" width="100">
+                </div>
+                
+                   
+            </div>
+            <div class="row2">
+                <div id="five">
+                        <img src="ninja.png" alt="" height="100" width="100">
+                </div>
+                <div id="six">
+                        <img src="ninja.png" alt="" height="100" width="100">
+                </div>
+                <div id="seven">
+                        <img src="ninja.png" alt="" height="100" width="100">
+                </div>
+                <div id="eight">
+                        <img src="ninja.png" alt="" height="100" width="100">
+                </div>
+            </div>
+            <button type="button" class="btn btn-light">Restore</button>
+        </div>
+
+    </div>
+
+</body>
+<script>
+     $(document).ready(function(){
+           
+            $('#one').click(function(){
+                $('#one img').fadeOut();
+            });
+            $('#two').click(function(){
+                $('#two img').fadeOut();
+            });
+
+            $('#three').click(function(){
+                $('#three img').fadeOut();
+            });
+
+            $('#four').click(function(){
+                $('#four img').fadeOut();
+            });
+
+            $('#five').click(function(){
+                $('#five img').fadeOut();
+            });
+
+            $('#six').click(function(){
+                $('#six img').fadeOut();
+            });
+
+            $('#seven').click(function(){
+                $('#seven img').fadeOut();
+            });
+
+            $('#eight').click(function(){
+                $('#eight img').fadeOut();
+            });
+
+            $('button').click(function(){
+                $('img').fadeIn();
+            });
+            });
+
+</script>
+
+</html>
